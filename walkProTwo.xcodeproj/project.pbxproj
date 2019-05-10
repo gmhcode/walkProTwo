@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		907FB2002286144100046B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB1FF2286144100046B0A /* AppDelegate.swift */; };
-		907FB2022286144100046B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2012286144100046B0A /* ViewController.swift */; };
+		907FB2022286144100046B0A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2012286144100046B0A /* ParentViewController.swift */; };
 		907FB2052286144100046B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907FB2032286144100046B0A /* Main.storyboard */; };
 		907FB2072286144200046B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907FB2062286144200046B0A /* Assets.xcassets */; };
 		907FB20A2286144200046B0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907FB2082286144200046B0A /* LaunchScreen.storyboard */; };
+		907FB2132286146900046B0A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2122286146900046B0A /* Command.swift */; };
+		907FB2162286147F00046B0A /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2152286147F00046B0A /* Tutorial.swift */; };
+		907FB2182286158700046B0A /* CommandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2172286158700046B0A /* CommandController.swift */; };
+		907FB21B228616DB00046B0A /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB21A228616DB00046B0A /* TutorialController.swift */; };
+		907FB21D228618FA00046B0A /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB21C228618FA00046B0A /* PopOverViewController.swift */; };
+		907FB21F2286193A00046B0A /* PopOverViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB21E2286193A00046B0A /* PopOverViewController2.swift */; };
+		907FB22122862BA900046B0A /* VCSourceOfTruth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB22022862BA900046B0A /* VCSourceOfTruth.swift */; };
+		907FB22522862FBD00046B0A /* CreateTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB22422862FBD00046B0A /* CreateTutorialViewController.swift */; };
+		907FB227228638CA00046B0A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB226228638CA00046B0A /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		907FB1FC2286144100046B0A /* walkProTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkProTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907FB1FF2286144100046B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		907FB2012286144100046B0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		907FB2012286144100046B0A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		907FB2042286144100046B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		907FB2062286144200046B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		907FB2092286144200046B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		907FB20B2286144200046B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907FB2122286146900046B0A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		907FB2152286147F00046B0A /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		907FB2172286158700046B0A /* CommandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandController.swift; sourceTree = "<group>"; };
+		907FB21A228616DB00046B0A /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		907FB21C228618FA00046B0A /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		907FB21E2286193A00046B0A /* PopOverViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController2.swift; sourceTree = "<group>"; };
+		907FB22022862BA900046B0A /* VCSourceOfTruth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSourceOfTruth.swift; sourceTree = "<group>"; };
+		907FB22422862FBD00046B0A /* CreateTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTutorialViewController.swift; sourceTree = "<group>"; };
+		907FB226228638CA00046B0A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,63 @@
 		907FB1FE2286144100046B0A /* walkProTwo */ = {
 			isa = PBXGroup;
 			children = (
-				907FB1FF2286144100046B0A /* AppDelegate.swift */,
-				907FB2012286144100046B0A /* ViewController.swift */,
+				907FB2012286144100046B0A /* ParentViewController.swift */,
+				907FB22422862FBD00046B0A /* CreateTutorialViewController.swift */,
+				907FB22322862F9300046B0A /* children */,
+				907FB22222862BAC00046B0A /* vcSourceOfTruth */,
+				907FB219228616C600046B0A /* Controllers */,
+				907FB2142286147000046B0A /* Models */,
 				907FB2032286144100046B0A /* Main.storyboard */,
+				907FB2112286145300046B0A /* Resources */,
+			);
+			path = walkProTwo;
+			sourceTree = "<group>";
+		};
+		907FB2112286145300046B0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				907FB1FF2286144100046B0A /* AppDelegate.swift */,
 				907FB2062286144200046B0A /* Assets.xcassets */,
 				907FB2082286144200046B0A /* LaunchScreen.storyboard */,
 				907FB20B2286144200046B0A /* Info.plist */,
 			);
-			path = walkProTwo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		907FB2142286147000046B0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				907FB2122286146900046B0A /* Command.swift */,
+				907FB2152286147F00046B0A /* Tutorial.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		907FB219228616C600046B0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				907FB2172286158700046B0A /* CommandController.swift */,
+				907FB21A228616DB00046B0A /* TutorialController.swift */,
+				907FB226228638CA00046B0A /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		907FB22222862BAC00046B0A /* vcSourceOfTruth */ = {
+			isa = PBXGroup;
+			children = (
+				907FB22022862BA900046B0A /* VCSourceOfTruth.swift */,
+			);
+			path = vcSourceOfTruth;
+			sourceTree = "<group>";
+		};
+		907FB22322862F9300046B0A /* children */ = {
+			isa = PBXGroup;
+			children = (
+				907FB21C228618FA00046B0A /* PopOverViewController.swift */,
+				907FB21E2286193A00046B0A /* PopOverViewController2.swift */,
+			);
+			path = children;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907FB2022286144100046B0A /* ViewController.swift in Sources */,
+				907FB2182286158700046B0A /* CommandController.swift in Sources */,
+				907FB22122862BA900046B0A /* VCSourceOfTruth.swift in Sources */,
+				907FB2022286144100046B0A /* ParentViewController.swift in Sources */,
+				907FB21D228618FA00046B0A /* PopOverViewController.swift in Sources */,
+				907FB21F2286193A00046B0A /* PopOverViewController2.swift in Sources */,
+				907FB2162286147F00046B0A /* Tutorial.swift in Sources */,
+				907FB227228638CA00046B0A /* TableViewController.swift in Sources */,
 				907FB2002286144100046B0A /* AppDelegate.swift in Sources */,
+				907FB2132286146900046B0A /* Command.swift in Sources */,
+				907FB22522862FBD00046B0A /* CreateTutorialViewController.swift in Sources */,
+				907FB21B228616DB00046B0A /* TutorialController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = walkProTwo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/walkProTwo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = walkProTwo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/walkProTwo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
