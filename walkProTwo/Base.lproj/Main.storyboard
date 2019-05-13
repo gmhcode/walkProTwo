@@ -253,6 +253,18 @@
                                     <action selector="createTutorialButtonTapped:" destination="Gdf-Lu-eru" eventType="touchUpInside" id="9vW-3W-uhI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60K-ZI-1MU">
+                                <rect key="frame" x="696" y="334" width="232" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.98647938739999996" blue="0.094230057199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="CreateTutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="createTutorialTapped:" destination="y0m-Ca-cdR" eventType="touchUpInside" id="f13-Zn-cAK"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-WC-vzK">
                                 <rect key="frame" x="20" y="434" width="416" height="396"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -349,7 +361,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ko-1d-4RV">
-                                <rect key="frame" x="696" y="717" width="232" height="52"/>
+                                <rect key="frame" x="772" y="823" width="232" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.55331205989999999" blue="0.46013974470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -357,19 +369,19 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="removeCommand:" destination="y0m-Ca-cdR" eventType="touchUpInside" id="97E-8q-SPg"/>
+                                    <action selector="removeCommandButtonTapped:" destination="y0m-Ca-cdR" eventType="touchUpInside" id="97E-8q-SPg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60K-ZI-1MU">
-                                <rect key="frame" x="696" y="334" width="232" height="181"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMj-W8-0EY">
+                                <rect key="frame" x="584" y="823" width="180" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.98647938739999996" blue="0.094230057199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="CreateTutorial">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="InsertCommand">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="createTutorialTapped:" destination="y0m-Ca-cdR" eventType="touchUpInside" id="f13-Zn-cAK"/>
+                                    <action selector="insertCommandButtonTapped:" destination="y0m-Ca-cdR" eventType="touchUpInside" id="GcW-BG-Hth"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -389,7 +401,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEe-PQ-P7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Gdf-Lu-eru" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1998.6328124999998" y="-138.79941434846265"/>
+            <point key="canvasLocation" x="-1707.421875" y="-142.31332357247436"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="rev-d7-mGh">

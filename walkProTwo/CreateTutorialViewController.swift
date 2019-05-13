@@ -23,12 +23,15 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
     @IBOutlet weak var addTextTextField: UITextField!
     
     
+    
     var selectedTutorial : Tutorial? {
         didSet {
             tutorialNameLabel.text = selectedTutorial?.title
         }
     }
     var selectedCommand : Command?
+        
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,10 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
         commandsTableView.delegate = self
         commandsTableView.dataSource = self
         
+        let tableViews = [tutorialTableView,viewControllerTableView,commandsTableView]
+        tableViews.forEach({$0?.tableFooterView = UIView(frame: CGRect.zero)})
+        
+//        tableView.tableFooterView = UIView(frame: CGRect.zero)
         // Do any additional setup after loading the view.
     }
     
@@ -70,15 +77,56 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
         }
     }
     
+    
     @IBAction func chooseTutorialButtonTapped(_ sender: Any) {
         
         TutorialController.shared.tutorials.append(Tutorial(title: "test" + String(TutorialController.shared.tutorials.count + 1), commandArray: []))
+        
         selectedTutorial = TutorialController.shared.tutorials.last
         
+        alert(string: "test" + String(TutorialController.shared.tutorials.count))
+        
+        
+        
+        let indexPath = IndexPath(row: TutorialController.shared.tutorials.count - 1, section: 0)
         
         tutorialTableView.reloadData()
+        
+        tutorialTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+        
+        commandsTableView.reloadData()
+        
     }
-    @IBAction func removeCommand(_ sender: Any) {
+    
+    
+    
+    @IBAction func insertCommandButtonTapped(_ sender: Any) {
+        insertCommand()
+    }
+    
+    func insertCommand(){
+        
+        if selectedCommand != nil {
+            
+            
+            var index = -1
+            
+            for i in selectedTutorial!.commandArray {
+                index += 1
+                print(index)
+                if i == selectedCommand {
+                    break
+                }
+            }
+            
+            TutorialController.shared.addCommands(for: selectedTutorial!, commands: CommandController.shared.commandsForTutorial1, index: index)
+        }
+    }
+    
+    
+    
+    @IBAction func removeCommandButtonTapped(_ sender: Any) {
+        removeCommand()
     }
     
     func removeCommand()
@@ -152,7 +200,11 @@ extension CreateTutorialViewController {
         }
         if tableView == commandsTableView {
             let cell = tableView.dequeueReusableCell(withIdentifier: "commandsCell", for: indexPath)
-            cell.textLabel?.text = TutorialController.shared.currentTutorial?.commandArray[indexPath.row].text
+            
+            if selectedTutorial?.commandArray.count ?? 0 > 0 {
+                cell.textLabel?.text = selectedTutorial?.commandArray[indexPath.row].text
+            }
+            
             return cell
         }
         
@@ -177,10 +229,9 @@ extension CreateTutorialViewController {
         }
         
         if tableView == commandsTableView {
-            selectedCommand = selectedTutorial?.commandArray[indexPath.row]
-            
-            
-            
+            if selectedTutorial!.commandArray.count > 0 {
+                selectedCommand = selectedTutorial?.commandArray[indexPath.row]
+            }
         }
     }
 }
