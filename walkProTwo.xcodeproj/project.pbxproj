@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903F0BFE2289BE84003D83D1 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F0BFD2289BE84003D83D1 /* GreenViewController.swift */; };
+		903F0C002289DABE003D83D1 /* customclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F0BFF2289DABE003D83D1 /* customclass.swift */; };
 		907FB2002286144100046B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB1FF2286144100046B0A /* AppDelegate.swift */; };
 		907FB2022286144100046B0A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907FB2012286144100046B0A /* ParentViewController.swift */; };
 		907FB2052286144100046B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907FB2032286144100046B0A /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		903F0BFD2289BE84003D83D1 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		903F0BFF2289DABE003D83D1 /* customclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customclass.swift; sourceTree = "<group>"; };
 		907FB1FC2286144100046B0A /* walkProTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkProTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907FB1FF2286144100046B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		907FB2012286144100046B0A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			children = (
 				907FB2122286146900046B0A /* Command.swift */,
 				907FB2152286147F00046B0A /* Tutorial.swift */,
+				903F0BFF2289DABE003D83D1 /* customclass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			children = (
 				907FB21C228618FA00046B0A /* PopOverViewController.swift */,
 				907FB21E2286193A00046B0A /* PopOverViewController2.swift */,
+				903F0BFD2289BE84003D83D1 /* GreenViewController.swift */,
 			);
 			path = children;
 			sourceTree = "<group>";
@@ -202,10 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903F0BFE2289BE84003D83D1 /* GreenViewController.swift in Sources */,
 				907FB2182286158700046B0A /* CommandController.swift in Sources */,
 				907FB22122862BA900046B0A /* VCSourceOfTruth.swift in Sources */,
 				907FB2022286144100046B0A /* ParentViewController.swift in Sources */,
 				907FB21D228618FA00046B0A /* PopOverViewController.swift in Sources */,
+				903F0C002289DABE003D83D1 /* customclass.swift in Sources */,
 				907FB21F2286193A00046B0A /* PopOverViewController2.swift in Sources */,
 				907FB2162286147F00046B0A /* Tutorial.swift in Sources */,
 				907FB227228638CA00046B0A /* TableViewController.swift in Sources */,

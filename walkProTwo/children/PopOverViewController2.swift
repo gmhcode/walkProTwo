@@ -8,22 +8,25 @@
 
 import UIKit
 
-protocol PopOverVC2Delegate: class {
-    func nextCommand2()
-}
-
 
 class PopOverViewController2: UIViewController {
     
     @IBOutlet var tutorialButtons: [UIButton]!
-    
     @IBAction func press(_ sender: UIButton) {
-        if sender.tag == TutorialController.shared.commandArray[0].view.tag{
-            delegate?.nextCommand2()
+        
+        if TutorialController.shared.commands.isEmpty == false{
+            
+            if sender.tag == TutorialController.shared.commands[0].view.tag{
+//                TutorialController.shared.nextCommandDelegate()
+                guard let parent = self.parent as? ParentViewController else {print("🔥❇️>>>\(#file) \(#line): guard ket failed<<<"); return  }
+                
+                TutorialController.shared.nextCommand(containerView: parent.containerView)
+            }
+        } else {
+            print("🎢 no commands available")
         }
     }
     
-    weak var delegate: PopOverVC2Delegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

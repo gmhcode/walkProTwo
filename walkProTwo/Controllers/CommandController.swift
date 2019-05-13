@@ -18,7 +18,7 @@ class CommandController {
     
     
     
-    func createAndPrepareCommand(viewController: String, view: Int)
+    func createAndPrepareCommand(viewController: String, view: Int, text: String)
     {
         var VC : UIViewController = popOverViewController
         var button = popOverViewController.tutorialButtons[view]
@@ -40,6 +40,7 @@ class CommandController {
         
         
         let command = Command(viewController: VC, view: button)
+        command.text = text
         
         commandsForTutorial1.append(command)
     }

@@ -20,3 +20,10 @@ class Command {
         self.viewController = viewController
     }
 }
+
+extension Command: Equatable {
+    static func == (lhs: Command, rhs: Command) -> Bool {
+        
+        return lhs.title == rhs.title && lhs.viewController == rhs.viewController && lhs.view == rhs.view && lhs.text == rhs.text
+    }
+}
