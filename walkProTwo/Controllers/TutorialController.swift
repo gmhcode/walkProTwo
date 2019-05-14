@@ -154,7 +154,13 @@ extension TutorialController {
     func removeCommand(tutorial: Tutorial, index: Int){
         tutorial.commandArray.remove(at: index)
     }
-    
+    func removeCommands(tutorial: Tutorial, indeces: [Int]){
+        
+        for i in indeces {
+            tutorial.commandArray.remove(at: i)
+        }
+        
+    }
     func replaceCommand(tutorial: Tutorial, index: Int, command: Command){
         
         tutorial.commandArray.remove(at: index)

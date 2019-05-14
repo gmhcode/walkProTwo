@@ -30,6 +30,7 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
         }
     }
     var selectedCommand : Command?
+    var selectedCommands : [Command] = []
         
     
     
@@ -65,6 +66,7 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
         if selectedTutorial != nil {
             
             TutorialController.shared.addCommands(for: selectedTutorial!, commands: CommandController.shared.commandsForTutorial1, index: nil)
+            CommandController.shared.commandsForTutorial1 = []
             
             commandsTableView.reloadData()
             
@@ -72,6 +74,7 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
         else {
             
             TutorialController.shared.createTutorial(title: "test" + String(TutorialController.shared.tutorials.count), commands: CommandController.shared.commandsForTutorial1)
+            CommandController.shared.commandsForTutorial1 = []
             
             tutorialTableView.reloadData()
         }
@@ -102,11 +105,14 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
     
     @IBAction func insertCommandButtonTapped(_ sender: Any) {
         insertCommand()
+        CommandController.shared.commandsForTutorial1 = []
     }
     
     func insertCommand(){
         
         if selectedCommand != nil {
+            
+            
             
             
             var index = -1
@@ -120,6 +126,7 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
             }
             
             TutorialController.shared.addCommands(for: selectedTutorial!, commands: CommandController.shared.commandsForTutorial1, index: index)
+            commandsTableView.reloadData()
         }
     }
     
@@ -132,17 +139,22 @@ class CreateTutorialViewController: UIViewController,UITableViewDelegate,UITable
     func removeCommand()
     {
         
+        
         if selectedCommand != nil {
             var index = -1
             
-            for i in selectedTutorial!.commandArray {
+            
+            guard let selectedTutorial = selectedTutorial else {print("❇️♊️>>>\(#file) \(#line): guard let failed<<<"); return}
+            
+            
+            for i in selectedTutorial.commandArray {
                 index += 1
                 print(index)
                 if i == selectedCommand {
                     break
                 }
             }
-            TutorialController.shared.removeCommand(tutorial: selectedTutorial!, index: index)
+            TutorialController.shared.removeCommand(tutorial: selectedTutorial, index: index)
             commandsTableView.reloadData()
         }
     }
@@ -164,7 +176,7 @@ extension CreateTutorialViewController {
         }
         if tableView == commandsTableView {
             
-            guard let currentTutorial = TutorialController.shared.currentTutorial else {print("🔥❇️>>>\(#file) \(#line): guard ket failed<<<"); return 0  }
+            guard let currentTutorial = selectedTutorial else {print("🔥❇️>>>\(#file) \(#line): guard ket failed<<<"); return 0  }
             
             return currentTutorial.commandArray.count
         }

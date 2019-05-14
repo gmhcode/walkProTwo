@@ -44,4 +44,7 @@ class CommandController {
         
         commandsForTutorial1.append(command)
     }
+    
+    
+    
 }
